@@ -41,3 +41,8 @@
   - `@ResponseEntity` is a wrapper for HTTP response object
   - `@ResponseEntity` provides fine-grained control to specify
     - HTTP status code, HTTP header, Response body
+
+# `@ControllerAdvice`
+- for handling exception globally across all controllers
+- Pre-process requests to controllers
+- Post-process responses to handle exception
