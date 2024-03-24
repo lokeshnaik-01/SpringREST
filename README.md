@@ -22,3 +22,7 @@
 - JSON data being passed to REST controller is converted to POJO
 - Java object being returned from REST controller is converted to JSON
 - this happens automatically as it is already integrated in spring
+
+# @PathVariable
+- used to bind path variable in url
+- both the variable names should match
