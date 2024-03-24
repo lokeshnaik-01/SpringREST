@@ -26,3 +26,18 @@
 # @PathVariable
 - used to bind path variable in url
 - both the variable names should match
+
+# ExceptionHandling
+1. create a custom error response class
+  - custom error response will be sent back to client as JSON
+  - we will define as Java Class
+  - Jackson will handle converting it to JSON
+2. Create Custom exception
+  - custom exception will be used by REST service
+3. Update REST service to throw exception
+4. Add exception Handler Method
+  - Define exception handler method with `@ExceptionHandler` annotation
+  - Exception Handler will return a ResponseEntity
+  - `@ResponseEntity` is a wrapper for HTTP response object
+  - `@ResponseEntity` provides fine-grained control to specify
+    - HTTP status code, HTTP header, Response body
